@@ -22,6 +22,74 @@
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+	
+<script>	
+window.digitalData = window.digitalData || [];
+window.digitalData = {
+    page: {
+        pageInfo: {
+           
+            pageName: window.document.title,
+            destinationURL: window.location.href,
+            referringURL: document.referrer,
+            platform: navigator.userAgent,
+          
+        }
+    },
+	"web": {
+      "webPageDetails": {
+        "pageViews": {
+		    "home":1,
+            "value":1
+         }
+	},
+		   
+      "webInteraction": {
+        "linkClicks": {
+            "value": 1
+        }
+      },
+		"server": "test",
+		"sitesection":"Home",
+		"viewname":"Home",
+		"id" : "get it now",
+		"name": "My Custom Link", // Name that shows up in the custom links report
+		"URL": "https://myurl.com", // The URL of the link
+		"type": "other" // values: other, download, exit
+        }
+}	
+</script>	
+
+<!--<script>	
+
+window.digitalData = {
+  "web": {
+      "webInteraction": {
+        "linkClicks": {
+            "value": 1
+        }
+      },
+	  "id" : "get it now",
+      "name": "My Custom Link", // Name that shows up in the custom links report
+      "URL": "https://myurl.com", // The URL of the link
+      "type": "other" // values: other, download, exit
+    }
+}	
+</script>
+<script src="https://assets.adobedtm.com/21b53c73144b/cb1e426d962b/launch-2156beeb6707-development.min.js" async></script>
+	
+	<script src="https://assets.adobedtm.com/21b53c73144b/0ab6d5f20b31/launch-7380b11c58f6-development.min.js" async></script>
+	-->
+	<script src="https://assets.adobedtm.com/21b53c73144b/cb1e426d962b/launch-2156beeb6707-development.min.js" async></script>
+	
+	<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WLLHJNJ');</script>
+<!-- End Google Tag Manager -->
+
 <script>	
 window.digitalData = window.digitalData || [];
 window.digitalData = {
@@ -37,14 +105,7 @@ window.digitalData = {
     }
 }
 </script>	
-	<script src="https://assets.adobedtm.com/21b53c73144b/0ab6d5f20b31/launch-7380b11c58f6-development.min.js" async></script>
-	<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-WLLHJNJ');</script>
-<!-- End Google Tag Manager -->
+	<!--<script src="https://assets.adobedtm.com/21b53c73144b/0ab6d5f20b31/launch-7380b11c58f6-development.min.js" async></script>-->
 </head><!--/head-->
 
 <body>
@@ -390,7 +451,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 											<div class="overlay-content">
 												<h2>$56</h2>
 												<p>Easy Polo Black Edition</p>
-												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+												<a href="#" class="btn btn-default add-to-cart" id="cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 											</div>
 										</div>
 								</div>
@@ -415,7 +476,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 										<div class="overlay-content">
 											<h2>$56</h2>
 											<p>Easy Polo Black Edition</p>
-											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+											<a href="#" class="btn btn-default add-to-cart" id="aadtioncart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 										</div>
 									</div>
 								</div>
@@ -440,7 +501,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 										<div class="overlay-content">
 											<h2>$56</h2>
 											<p>Easy Polo Black Edition</p>
-											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+											<a href="#" class="btn btn-default add-to-cart" id="cartupdate1"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 										</div>
 									</div>
 								</div>
@@ -465,7 +526,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 										<div class="overlay-content">
 											<h2>$56</h2>
 											<p>Easy Polo Black Edition</p>
-											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+											<a href="#" class="btn btn-default add-to-cart" id="cartupadted2"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 										</div>
 									</div>
 									<img src="images/home/new.png" class="new" alt="" />
@@ -491,7 +552,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 										<div class="overlay-content">
 											<h2>$56</h2>
 											<p>Easy Polo Black Edition</p>
-											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+											<a href="#" class="btn btn-default add-to-cart" id="cartIncrement"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 										</div>
 									</div>
 									<img src="images/home/sale.png" class="new" alt="" />
