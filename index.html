@@ -163,7 +163,8 @@ window.digitalData = {
         }
     }
 }
-</script>	
+</script>
+	
 	<!--<script src="https://assets.adobedtm.com/21b53c73144b/0ab6d5f20b31/launch-7380b11c58f6-development.min.js" async></script>-->
 </head><!--/head-->
 
@@ -172,6 +173,13 @@ window.digitalData = {
      var utag_data = utag_data || {};
         
      </script>
+<script>
+    // Example to toggle the button states
+    const button = document.querySelector('#ot-sdk-btn-floating');
+    button.addEventListener('click', function() {
+      this.classList.toggle('open');
+    });
+  </script>
 
 <!-- Loading script asynchronously -->
 <script type="text/javascript">
