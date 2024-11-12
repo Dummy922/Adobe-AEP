@@ -13,8 +13,7 @@
     <link href="css/animate.css" rel="stylesheet">
 	<link href="css/main.css" rel="stylesheet">
 	<link href="css/responsive.css" rel="stylesheet">
-	style>
-    /* Basic reset and setup for the floating button */
+    <style>
     #ot-sdk-btn-floating {
       position: fixed; /* Fixes the button in place */
       bottom: 20px; /* 20px from the bottom of the screen */
@@ -25,8 +24,6 @@
       align-items: center;
       cursor: pointer;
     }
-
-    /* Style for the button itself */
     .ot-floating-button__open {
       width: 50px; /* Size of the button */
       height: 50px; /* Size of the button */
@@ -40,18 +37,15 @@
       align-items: center;
     }
 
-    /* Optional hover effect for the button */
     .ot-floating-button__open:hover {
       background-color: #0056b3; /* Darker shade on hover */
     }
-
-    /* Back side of the button (if needed for a close action) */
     .ot-floating-button__close {
       display: none; /* Initially hidden */
       position: absolute;
       top: 0;
       right: 0;
-      background-color: #dc3545; /* Red color for close */
+      background-color: #dc3545; 
       width: 30px;
       height: 30px;
       border-radius: 50%;
@@ -61,15 +55,12 @@
       justify-content: center;
       align-items: center;
     }
-
-    /* Show the close button when it's needed */
     #ot-sdk-btn-floating.open .ot-floating-button__close {
-      display: flex; /* Makes it visible */
+      display: flex; 
     }
 
     #ot-sdk-btn-floating.open .ot-floating-button__open {
-      display: none; /* Hides the open button when close button is shown */
-    }
+      display: none; }
   </style>
 
     <!--[if lt IE 9]>
