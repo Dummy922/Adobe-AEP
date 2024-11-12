@@ -2519,5 +2519,60 @@ h2.title {
 .contact-info .social-networks ul li a:hover{
   color: #FE980F;
 }
+#ot-sdk-btn-floating {
+  position: fixed; /* Fixes the button in place */
+  bottom: 20px; /* 20px from the bottom of the screen */
+  right: 20px; /* 20px from the right of the screen */
+  z-index: 9999; /* Ensures the button is above other elements */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* Style for the button itself */
+.ot-floating-button__open {
+  width: 50px; /* Size of the button */
+  height: 50px; /* Size of the button */
+  background-color: #007bff; /* Button color */
+  border: none;
+  border-radius: 50%; /* Makes it round */
+  color: white;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Optional hover effect for the button */
+.ot-floating-button__open:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
+
+/* Back side of the button (if needed for a close action) */
+.ot-floating-button__close {
+  display: none; /* Initially hidden */
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #dc3545; /* Red color for close */
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Show the close button when it's needed */
+#ot-sdk-btn-floating.open .ot-floating-button__close {
+  display: flex; /* Makes it visible */
+}
+
+#ot-sdk-btn-floating.open .ot-floating-button__open {
+  display: none; /* Hides the open button when close button is shown */
+}
 
 
